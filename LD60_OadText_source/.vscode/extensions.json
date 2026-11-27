@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "firefox-devtools.vscode-firefox-debug",
+    "slevesque.shader",
+    "dbaeumer.vscode-eslint",
+    "dprint.dprint",
+    "vitest.explorer",
+  ],
+}

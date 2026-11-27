@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "engine/**/*",
+    "assets/**/*",
+    "src/**/*",
+    "globals.d.ts",
+    "resourceQueryFallback.d.ts"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "module": "ESNext",
+    "sourceMap": true,
+
+    "strict": true,
+    "noImplicitAny": false,
+
+    "resolveJsonModule": true,
+    "allowArbitraryExtensions": true,
+    "jsx": "react-jsx",
+
+    "lib": ["ES2022", "ESNext.disposable", "DOM", "DOM.Iterable"]
+  }
+}

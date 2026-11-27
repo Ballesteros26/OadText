@@ -1,0 +1,55 @@
+{
+  "typescript": {
+    "indentWidth": 4,
+    "useTabs": true,
+    "quoteStyle": "preferSingle",
+    "jsx.quoteStyle": "preferDouble",
+    "operatorPosition": "maintain",
+    "conditionalExpression.operatorPosition": "nextLine",
+
+    "arguments.preferHanging": "onlySingleItem",
+    "arrayExpression.preferHanging": "onlySingleItem",
+    "forInStatement.preferHanging": true,
+    "forOfStatement.preferHanging": true,
+    "parameters.preferHanging": "onlySingleItem",
+    "tupleType.preferHanging": "onlySingleItem",
+    "typeParameters.preferHanging": "onlySingleItem",
+
+    "commentLine.forceSpaceAfterSlashes": false,
+    "constructorType.spaceAfterNewKeyword": true, // prettier
+    "constructSignature.spaceAfterNewKeyword": true, // prettier
+    "typeAssertion.spaceBeforeExpression": false,
+
+    "module.sortImportDeclarations": "maintain",
+    "module.sortExportDeclarations": "maintain",
+    "exportDeclaration.sortNamedExports": "maintain",
+    "importDeclaration.sortNamedImports": "maintain",
+    "ignoreNodeCommentText": "@formatter-ignore",
+    "ignoreFileCommentText": "@formatter-ignore",
+  },
+  "json": {
+    "commentLine.forceSpaceAfterSlashes": false,
+    "jsonTrailingCommaFiles": [
+      // tsconfig.app.json is imported by eslint config
+      ".vscode/extensions.json",
+      ".vscode/launch.json",
+      ".vscode/settings.json",
+      ".vscode/tasks.json",
+    ],
+    "ignoreNodeCommentText": "@formatter-ignore",
+  },
+  "markdown": {
+    "ignoreDirective": "@formatter-ignore",
+    "ignoreFileDirective": "@formatter-ignore",
+    "ignoreStartDirective": "@formatter-ignore-start",
+    "ignoreEndDirective": "@formatter-ignore-end",
+  },
+  "excludes": [
+    "**/*-lock.json",
+  ],
+  "plugins": [
+    "https://plugins.dprint.dev/typescript-0.91.4.wasm",
+    "https://plugins.dprint.dev/json-0.19.3.wasm",
+    "https://plugins.dprint.dev/markdown-0.17.1.wasm",
+  ],
+}

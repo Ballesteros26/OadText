@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "./node_modules/@total-typescript/ts-reset/dist/recommended.d.ts",
+
+    // vite
+    "docs/**/*",
+    "typescript-transformer/**/*",
+    "vite/**/*",
+    "vite.config.ts"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+
+    "strict": true,
+    "noImplicitAny": false,
+
+    "types": ["node"],
+    "lib": ["ES2024", "ESNext.Iterator"]
+  }
+}

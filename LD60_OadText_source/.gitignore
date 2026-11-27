@@ -1,0 +1,14 @@
+/bin/
+/dist/
+/node_modules/
+
+tsconfig.tsbuildinfo
+/.vitest/
+
+# tiled
+/*.tiled-session
+
+# generated declaration files
+*.d.*.ts
+*.d.*.ts.map
+/resourceQueryFallback.d.ts

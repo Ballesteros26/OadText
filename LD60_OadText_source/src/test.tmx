@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.2" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="142">
+ <properties>
+  <property name="file" type="file" value="../test/tiled/input/basic.tmx"/>
+  <property name="rterezre" value="g"/>
+  <property name="t" type="color" value="#ff55aa00"/>
+  <property name="testsdgtgtde" type="int" value="6477"/>
+ </properties>
+ <tileset firstgid="1" name="Basic" tilewidth="16" tileheight="28" tilecount="24" columns="12">
+  <image source="images/tiles.png" width="192" height="56"/>
+  <terraintypes>
+   <terrain name="terrain1" tile="-1">
+    <properties>
+     <property name="terrainprop" value="1234"/>
+    </properties>
+   </terrain>
+   <terrain name="terrain2" tile="-1"/>
+   <terrain name="Test" tile="0"/>
+  </terraintypes>
+  <tile id="0">
+   <properties>
+    <property name="testbool" type="bool" value="true"/>
+    <property name="walkable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="walkable" value="false"/>
+   </properties>
+   <objectgroup draworder="index">
+    <object id="0" x="6" y="7" width="8" height="7"/>
+   </objectgroup>
+  </tile>
+  <tile id="2" terrain="1,0,1,1">
+   <objectgroup color="#00ff00" name="Goal">
+    <object id="88" name="TestName" type="hihi" x="128" y="3" width="32" height="32"/>
+    <object id="91" x="43" y="56.6667">
+     <polyline points="-2,0.666667 -7.33333,-10.6667 2.33333,-12 16,-13 15.6667,0.666667 5.66667,10.6667"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="3" terrain="0,,,">
+   <properties>
+    <property name="walkable" value="false"/>
+   </properties>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="12" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="walkable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="walkable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="6" terrain="1,1,1,1">
+   <properties>
+    <property name="walkable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="animantcosprop" value="e4"/>
+   </properties>
+   <animation>
+    <frame tileid="2" duration="1000"/>
+    <frame tileid="3" duration="1000"/>
+   </animation>
+  </tile>
+  <wangsets>
+   <wangset name="Wang1" tile="1">
+    <wangedgecolor name="" color="#ff0000" tile="-1" probability="1"/>
+    <wangedgecolor name="" color="#00ff00" tile="-1" probability="1"/>
+    <wangtile tileid="1" wangid="0x1010101"/>
+    <wangtile tileid="3" wangid="0x1010101"/>
+    <wangtile tileid="4" wangid="0x1010101"/>
+    <wangtile tileid="5" wangid="0x1010101"/>
+    <wangtile tileid="6" wangid="0x1010101"/>
+    <wangtile tileid="7" wangid="0x1010101"/>
+    <wangtile tileid="8" wangid="0x2020000"/>
+    <wangtile tileid="9" wangid="0x1000100"/>
+    <properties>
+     <property name="hiehihrigo" type="bool" value="true"/>
+    </properties>
+   </wangset>
+   <wangset name="Wang2" tile="-1"/>
+  </wangsets>
+ </tileset>
+ <tileset firstgid="25" name="texture" tilewidth="16" tileheight="16" tilecount="512" columns="32">
+  <properties>
+   <property name="prop" value="12345"/>
+  </properties>
+  <image source="images/texture.png" width="512" height="256"/>
+  <tile id="231">
+   <objectgroup draworder="index">
+    <object id="0" x="4" y="4" width="8" height="8"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="537" name="Test" tilewidth="85" tileheight="61" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="85" height="61" source="assets/toast.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="Kachelebene 1" width="16" height="16">
+  <data>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="2"/>
+   <tile gid="3"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile/>
+   <tile gid="537"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="5"/>
+   <tile gid="6"/>
+   <tile gid="7"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="8"/>
+   <tile gid="8"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="256"/>
+   <tile gid="1"/>
+   <tile/>
+   <tile/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="10"/>
+   <tile gid="10"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="256"/>
+   <tile gid="1"/>
+   <tile/>
+   <tile/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="4"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile/>
+   <tile/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile/>
+   <tile/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="3"/>
+   <tile gid="2"/>
+   <tile gid="2"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile/>
+   <tile/>
+   <tile gid="61"/>
+   <tile gid="62"/>
+   <tile gid="187"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="253"/>
+   <tile gid="253"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile/>
+   <tile/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="187"/>
+   <tile gid="2"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="5"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile gid="253"/>
+   <tile gid="253"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="2"/>
+   <tile/>
+   <tile/>
+   <tile gid="61"/>
+   <tile gid="62"/>
+   <tile gid="187"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile/>
+   <tile/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="187"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile/>
+   <tile/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="13"/>
+   <tile gid="3"/>
+   <tile gid="3"/>
+   <tile gid="1"/>
+   <tile gid="253"/>
+   <tile gid="253"/>
+   <tile gid="253"/>
+   <tile gid="1"/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup color="#0055ff" id="2" name="Spawn" offsetx="1" offsety="1">
+  <object id="93" x="151.75" y="110.25">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Collision">
+  <object id="71" x="0" y="80" width="32"/>
+  <object id="73" x="128" y="144" width="96"/>
+  <object id="74" x="0" y="160" width="128"/>
+  <object id="79" x="0" y="-2" width="224" height="4"/>
+  <object id="82" x="15" y="119">
+   <polygon points="0,0 -12,20 8,28 12,8 0,0"/>
+  </object>
+  <object id="83" x="156" y="52">
+   <polyline points="0,0 16,-8 32,-4 36,-12 36,-20 28,-20 24,-16"/>
+  </object>
+  <object id="84" gid="2" x="6" y="40" width="22" height="34"/>
+  <object id="86" x="208" y="112" width="16" height="16"/>
+  <object id="90" x="192" y="32" width="16" height="16"/>
+  <object id="98" x="64" y="80" width="160"/>
+  <object id="104" x="150" y="146" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="110" x="76" y="140">
+   <polyline points="-4,-12 4,-12"/>
+  </object>
+  <object id="118" x="124.571" y="119.333">
+   <polygon points="0,0 -0.571429,15.3333 10.5714,22.6667 13.4286,-5.33333"/>
+  </object>
+  <object id="130" x="176" y="124" rotation="-32.3853">
+   <polygon points="0,0 14,-22 19.3211,-4.32398"/>
+  </object>
+ </objectgroup>
+ <imagelayer id="4" name="Bildebene 1" x="16" y="28" opacity="0.8" offsetx="-8" offsety="6">
+  <image source="images/level1.png" trans="aa0000" width="128" height="40"/>
+ </imagelayer>
+ <objectgroup color="#aa55ff" draworder="index" id="5" name="Object Layer 3" offsetx="8" offsety="4">
+  <properties>
+   <property name="et" value="g"/>
+   <property name="test" type="float" value="3"/>
+  </properties>
+  <object id="132" x="37" y="92">
+   <point/>
+  </object>
+  <object id="135" x="182" y="62" width="6" height="4"/>
+ </objectgroup>
+ <group id="6" name="Testgroup" offsetx="22" offsety="20">
+  <imagelayer id="7" name="Image Layer 2" x="44" y="67" offsetx="-22" offsety="-32"/>
+  <objectgroup color="#00ff00" draworder="index" id="8" name="Goal">
+   <object id="88" name="TestName" type="hihi" x="128" y="3" width="32" height="32"/>
+   <object id="91" x="43" y="56.6667">
+    <polyline points="-2,0.666667 -7.33333,-10.6667 2.33333,-12 16,-13 15.6667,0.666667 5.66667,10.6667"/>
+   </object>
+   <object id="138" x="-38.8529" y="-4.82848" width="83" height="19" rotation="-7.05835">
+    <properties>
+     <property name="rgd" type="float" value="96"/>
+    </properties>
+    <text fontfamily="Nirmala UI" wrap="1">Hello World</text>
+   </object>
+   <object id="139" x="-42" y="100" width="49" height="37">
+    <text fontfamily="MS Sans Serif" pixelsize="20" wrap="1" bold="1" italic="1">Hello World</text>
+   </object>
+  </objectgroup>
+ </group>
+</map>

@@ -1,0 +1,36 @@
+{
+	"Ignore comment": {
+		"scope": "javascript,typescript,typescriptreact,json,jsonc",
+		"prefix": "@formatter-ignore",
+		"body": [
+			"@formatter-ignore",
+		],
+		"description": [
+			"Disables the formatter for the next node.\n",
+			"If placed on the first line, the formatter is disabled for the entire file."
+		]
+	},
+	"Ignore comment line": {
+		"scope": "markdown",
+		"prefix": "@formatter-ignore",
+		"body": [
+			"<!-- @formatter-ignore -->",
+		],
+		"description": [
+			"Disables the formatter for the next node.\n",
+			"If placed on the first line, the formatter is disabled for the entire file."
+		]
+	},
+	"Ignore comment range": {
+		"scope": "markdown",
+		"prefix": "@formatter-ignore-start",
+		"body": [
+			"<!-- @formatter-ignore-start -->",
+			"$0",
+			"<!-- @formatter-ignore-end -->",
+		],
+		"description": [
+			"Disables the formatter for the given range."
+		]
+	}
+}

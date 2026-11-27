@@ -1,0 +1,7 @@
+{
+  // extend tsconfig.app because it is used as fixture for the eslint tests
+  "extends": "../../../tsconfig.app.json",
+  "include": [
+    "../**/*"
+  ]
+}

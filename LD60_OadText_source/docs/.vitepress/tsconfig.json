@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "target": "es2022",
+    "module": "esnext",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true
+  },
+  "exclude": ["cache", "dist"]
+}

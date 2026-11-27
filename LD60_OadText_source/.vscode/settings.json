@@ -1,0 +1,62 @@
+{
+  "files.exclude": {
+    "dist": true,
+    "node_modules": true,
+    "tsconfig.tsbuildinfo": true,
+    "*.tiled-session": true,
+    "**/*.d.*.ts": true,
+    "**/*.d.*.ts.map": true,
+    // dont exclude resourceQueryFallback.d.ts to indicate fallback behavior
+    "docs/.vitepress/dist": true,
+    "docs/.vitepress/cache": true,
+  },
+  // add bin because it is not included in files.exclude
+  "vitest.configSearchPatternExclude": "{bin/**,**/node_modules/**,**/.*/**,**/*.d.ts}",
+
+  "eslint.options": {
+    "flags": ["unstable_native_nodejs_ts_config"],
+  },
+  "editor.insertSpaces": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "js/ts.tsdk.path": "./node_modules/typescript/lib",
+  "js/ts.preferences.preferTypeOnlyAutoImports": true,
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "js/ts.preferences.autoImportFileExcludePatterns": [
+    "**/__*/", // runAsync
+
+    "**/node_modules/@types/node/", // once
+    "**/node_modules/stacktrace-js/", // fromError
+    "**/node_modules/playwright/", // defineConfig
+    "**/node_modules/@types/react/*-runtime", // jsx
+  ],
+  "js/ts.preferences.autoImportSpecifierExcludeRegexes": [
+    "^@pixi/layout/components$", // Sprite
+  ],
+  "json.schemas": [{
+    "fileMatch": ["*.jsonc"],
+    "schema": {
+      "allowTrailingCommas": true,
+    },
+  }],
+
+  "[typescript]": {
+    "editor.defaultFormatter": "dprint.dprint",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dprint.dprint",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dprint.dprint",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "dprint.dprint",
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "dprint.dprint",
+  },
+}
